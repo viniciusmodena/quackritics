@@ -1,0 +1,54 @@
+.paginate-dots,
+.paginate-page,
+.paginate-previous,
+.paginate-next,
+.paginate-link {
+  color: #ffe100;
+  font-family: "Oleo script", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  list-style-type: none;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  transition: top ease 0.4s;
+}
+
+.paginate-active-page {
+  color: #fff;
+}
+
+.paginate-page:hover,
+.paginate-dots:hover,
+.paginate-previous:hover,
+.paginate-next:hover {
+  top: -3px;
+  filter: brightness(160%);
+}
+
+.paginate-active-page:hover {
+  top: 0;
+}
+
+.paginate-page {
+  margin: 0 5px;
+}
+
+.paginate-previous {
+  margin-right: 8px;
+}
+
+.paginate-next {
+  margin-left: 8px;
+}
+
+.paginate-container {
+  display: flex;
+  max-width: 180px;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+ReactPaginate {
+  margin-top: 50px;
+}
